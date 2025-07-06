@@ -1,9 +1,16 @@
 import React from 'react';
+import {Outlet} from "react-router-dom";
+import Sidebar from "./Sidebar.jsx";
+
 
 const Body = () => {
     return (
         <div>
-            <h1>Body</h1>
+            <div className="flex">
+                <Sidebar />
+                <Outlet />
+            </div>
+
         </div>
     );
 };
